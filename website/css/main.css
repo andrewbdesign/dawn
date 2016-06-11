@@ -280,3 +280,190 @@ textarea {
         page-break-after: avoid;
     }
 }
+/*=======================================
+Custom CSS
+=======================================*/
+p {
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*=======================================
+Nav
+=======================================*/
+nav {
+  height: 80px;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(22,22,22,0.4);
+  border-bottom: 1px solid #787878;
+}
+nav a {
+  display: block;
+}
+#logo {
+  display: inline-block;
+  width: 168px;
+  height: 45px;
+  position: relative;
+  top: 18px;
+}
+#menu-list {
+  width: 300px;
+  background: #eee;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  transition: all 200ms ease-in-out;
+}
+#menu-list a {
+  text-decoration: none;
+  color: #0BB89B;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#menu-list a:hover {
+  font-weight: bold;
+}
+.hide {
+  right: 0px !important;
+}
+#menu-hamburger {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  cursor: pointer;
+  pointer-events: all;
+  width: 32px;
+  height: 32px;
+}
+/*=======================================
+Slideshow container
+=======================================*/
+#slideshow-container {
+  padding-top: 80px;
+  width:100vw;
+  height: calc(90vh - 80px);
+  border-bottom: 1px solid #787878;
+}
+.slide-01 {
+  background: url("../img/slides/slide-02.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+/*=======================================
+Our section
+=======================================*/
+.our-section {
+  padding: 2em 0 4em;
+  background: #fff;
+  width: 100%;
+}
+.twitter-section,
+.article-section {
+  margin: 3em 0;
+}
+.twitter-section {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.twitter-section h3 {
+  display: inline;
+}
+.twitter-section p {
+  display: inline;
+}
+.twitter-section img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*=======================================
+Programs section
+=======================================*/
+.program-section {
+  background:#fafafa;
+  padding: 2em 0 4em;
+}
+.program-section img {
+  border-radius: 50%;
+  width: 100%;
+}
+/*=======================================
+Our section
+=======================================*/
+.video-section {
+  padding: 2em 0 4em;
+  color: #fff;
+  background: #2b3d4f;
+}
+
+/*=======================================
+Signup section
+=======================================*/
+.signup-section {
+  padding: 2em 0 4em;
+  background: #eee;
+}
+
+/*=======================================
+Core beliefs section
+=======================================*/
+.core-beliefs-section {
+  padding: 2em 0 4em;
+  background: #0ab79b;
+  color: #fff;
+}
+.core-beliefs-section img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+/*=======================================
+Sponsors section
+=======================================*/
+.sponsors-section {
+  padding: 2em 0 4em;
+}
+.sponsors-section img{
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*=======================================
+contact form section
+=======================================*/
+#contact-form {
+  padding: 2em 0 4em;
+  color:#fff;
+  background: #000;
+}
+
+/*=======================================
+Footer
+=======================================*/
+#footer {
+  padding: 2em 0 4em;
+  color:#fff;
+  background: #000;
+  text-align: center;
+}
