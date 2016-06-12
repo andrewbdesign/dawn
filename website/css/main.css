@@ -460,6 +460,7 @@ contact form section
   padding: 2em 0 4em;
   color:#fff;
   background: #000;
+  background: url("../img/bg-contact.jpg")
 }
 
 #contact-form h1 {
@@ -480,6 +481,7 @@ contact form section
   border-top: 1px solid #363636;
   width: 282px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #contact-form legend {
@@ -497,7 +499,7 @@ contact form section
 }
 .contact-group-info input,
 .contact-group-info textarea{
-  width: 80%;
+  width: 84%;
   margin-bottom: 20px;
   border: 0px;
   float: left;
@@ -510,7 +512,7 @@ contact form section
 .contact-icon {
   display: inline-block;
   background: #0ab79b;
-  width: 50px;
+  width: 16%;
   float: left;
   text-align: center;
   height: 50px;
@@ -521,6 +523,31 @@ contact form section
 .textarea-icon {
   height: 120px;
   line-height: 120px;
+  resize: none;
+}
+#submit-btn {
+  width: 100%;
+  background: #0ab79b;
+  border: none;
+  height: 50px;
+  font-family: montserrat, sans-serif;
+  border-bottom: 4px solid #138c74;
+  margin-bottom: 70px;
+}
+
+.social {
+  text-align: center;
+  margin: 20px 0;
+
+}
+.social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.contact-icon-colour {
+  color: #0ab79b;
+  margin: 0 5px;
 }
 /*=======================================
 Footer
