@@ -1,6 +1,7 @@
 $(document).ready(function(){
   //Load page partials
   $("#nav").load("views/nav.html")
+  $("#sponsors-section").load("views/sponsors.html")
   $("#contact-form").load("views/contact.html")
   $("#footer").load("views/footer.html")
   var body = document.querySelector("body")

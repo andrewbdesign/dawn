@@ -445,12 +445,26 @@ Core beliefs section
 /*=======================================
 Sponsors section
 =======================================*/
-.sponsors-section {
+#sponsors-section {
   padding: 2em 0 4em;
 }
-.sponsors-section img{
+#sponsors-section h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #0ab79b;
+}
+#sponsors-section img{
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 20px;
+  max-width: 100%;
+}
+#sponsors-section hr{
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: #000;
+  height: 2px;
+  border: 0;
 }
 
 /*=======================================
