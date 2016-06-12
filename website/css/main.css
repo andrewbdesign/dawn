@@ -433,13 +433,36 @@ Signup section
 Core beliefs section
 =======================================*/
 .core-beliefs-section {
-  padding: 2em 0 4em;
+  padding: 2em 0;
   background: #0ab79b;
   color: #fff;
+  text-align: center;
 }
-.core-beliefs-section img {
+.core-beliefs-section h1 {
+  text-align: center;
+}
+.core-beliefs-section h3 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.core-beliefs-section p {
+  margin-bottom: 60px;
+}
+.core-beliefs-section hr {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: none;
+  height: 2px;
+  background: #000;
+}
+/*.core-beliefs-section img {
   border-radius: 50%;
   width: 100%;
+}*/
+.core-beliefs-section a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*=======================================
