@@ -547,6 +547,7 @@ contact form section
   height: 50px;
   line-height: 50px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .textarea-icon {
