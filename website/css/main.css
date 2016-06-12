@@ -427,8 +427,38 @@ Signup section
 .signup-section {
   padding: 2em 0 4em;
   background: #eee;
+  color: #000;
 }
-
+.signup-section h1 {
+  text-align: center;
+  color: #0ab79b;
+}
+.signup-section p {
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.signup-section hr {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: none;
+  height: 2px;
+  background: #000;
+}
+#signup-btn {
+  color: #fff;
+  background: #0ab79b;
+  display: inline-block;
+  font-family: montserrat, sans-serif;
+  border-bottom: 4px solid #138c74;
+  margin-bottom: 70px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  line-height: 48px;
+}
 /*=======================================
 Core beliefs section
 =======================================*/
