@@ -410,7 +410,45 @@ Programs section
   padding: 2em 0 4em;
 }
 .program-section img {
-  background: red;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.program-container {
+  background: #0ab79b;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.program-section h1 {
+  text-align: center;
+  color: #0ab79b;
+}
+.program-section hr {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: none;
+  height: 2px;
+  background: #000;
+}
+.program-section a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.program-section p,
+.program-section h3 {
+  font-weight: 400;
+}
+.program-section p {
+  margin-bottom: 70px;
 }
 /*=======================================
 Our section
