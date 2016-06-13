@@ -752,7 +752,9 @@ contact form section
   background: #000;
   background: url("../img/bg-contact.jpg")
 }
-
+#contact-form form {
+  width: 100%;
+}
 #contact-form h1 {
   text-align: center;
   font-weight: 400;
@@ -825,11 +827,12 @@ contact form section
   border-bottom: 4px solid #138c74;
   margin-bottom: 70px;
 }
-
 .social {
   text-align: center;
   margin: 20px 0;
-
+}
+.social-group {
+  text-align: center;
 }
 .social a {
   color: #fff;
@@ -849,6 +852,29 @@ Footer
   background: #161616;
   text-align: center;
   box-shadow: 0px -6px 13px rgba(22,22,22,.4);
-  /*border-top: 1px solid #787878;*/
   border-top: #161616;
+}
+
+
+/*=======================================
+Media queries
+=======================================*/
+@media screen and (min-width: 680px) {
+
+  /*=======================================
+  Footer
+  =======================================*/
+  #contact-form form {
+    width: 360px;
+    margin: 0 auto;
+  }
+  #contact-form h1 {
+    font-size: 38px;
+  }
+  .social {
+    display: inline-block;
+  }
+  #footer {
+    padding: 1em 0;
+  }
 }

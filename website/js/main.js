@@ -70,22 +70,22 @@
 
 		if(sectionFrom.index() < sectionTo.index()){
       tlDown.set($body, {className:'+=is-animating'})
-            .to(sectionFrom, 1.2, {x:'-=100%', ease:Power4.easeInOut, clearProps:'all'},'0')
-            .to(sectionTo, 1.2, {x:'0%', ease:Power4.easeInOut},'0')
-            .to(bcgFrom, 1.2, {x:'30%', ease:Power4.easeInOut, clearProps:'all'}, '0')
-            .from(bcg, 1.2, {x:'-30%', ease:Power4.easeInOut, clearProps:'all'}, '0')
-            .from(heading, .7, {autoAlpha:0, y:40, ease:Power4.easeInOut},'-=1')
-            .from(subheading, .7, {autoAlpha:0, y:40, ease:Power4.easeInOut},'-=0.6')
+            .to(sectionFrom, .7, {x:'-=100%', ease:Sine.easeOut, clearProps:'all'},'0')
+            .to(sectionTo, .7, {x:'0%', ease:Sine.easeOut},'0')
+            .to(bcgFrom, .7, {x:'30%', ease:Sine.easeOut, clearProps:'all'}, '0')
+            .from(bcg, .7, {x:'-30%', ease:Sine.easeOut, clearProps:'all'}, '0')
+            .from(heading, .5, {autoAlpha:0, y:40, ease:Sine.easeOut},'0.4')
+            .from(subheading, .5, {autoAlpha:0, y:40, ease:Sine.easeOut},'0.5')
             .set($body, {className:'-=is-animating'});
 		} else {
       tlUp.set($body, {className:'+=is-animating'})
           .set(sectionTo, {x:'-100%'})
-          .to(sectionFrom, 1.2, {x:'100%', ease:Power4.easeInOut, clearProps:'all'},'0')
-          .to(sectionTo, 1.2, {x:'0%', ease:Power4.easeInOut},'0')
-          .to(bcgFrom, 1.2, {x:'-30%', ease:Power4.easeInOut, clearProps:'all'}, '0')
-          .from(bcg, 1.2, {x:'30%', ease:Power4.easeInOut, clearProps:'all'}, '0')
-          .from(heading, .7, {autoAlpha:0, y:40, ease:Power4.easeInOut},'-=1')
-          .from(subheading, .7, {autoAlpha:0, y:40, ease:Power4.easeInOut},'-=0.6')
+          .to(sectionFrom, .7, {x:'100%', ease:Sine.easeOut, clearProps:'all'},'0')
+          .to(sectionTo, .7, {x:'0%', ease:Sine.easeOut},'0')
+          .to(bcgFrom, .7, {x:'-30%', ease:Sine.easeOut, clearProps:'all'}, '0')
+          .from(bcg, .7, {x:'30%', ease:Sine.easeOut, clearProps:'all'}, '0')
+          .from(heading, .5, {autoAlpha:0, y:40, ease:Sine.easeOut},'0.4')
+          .from(subheading, .5, {autoAlpha:0, y:40, ease:Sine.easeOut},'0.5')
           .set($body, {className:'-=is-animating'});
 		}
 
