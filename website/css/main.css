@@ -595,6 +595,9 @@ Programs section
 .program-section p {
   margin-bottom: 70px;
 }
+.group-program {
+  width: 100%;
+}
 /*=======================================
 Our section
 =======================================*/
@@ -710,7 +713,9 @@ Core beliefs section
   text-decoration: none;
   color: #fff;
 }
-
+.core-links {
+  width: 100%;
+}
 /*=======================================
 Sponsors section
 =======================================*/
@@ -871,6 +876,61 @@ Media queries
 =======================================*/
 @media screen and (min-width: 680px) {
   /*=======================================
+  Typography
+  =======================================*/
+  h1 {
+    font-size: 38px;
+  }
+  /*=======================================
+  article-section
+  =======================================*/
+
+  .article-section,
+  .twitter-feed {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .twitter-feed {
+    margin: 3em 0;
+  }
+  .article-section h1 {
+    margin: 0;
+  }
+  .article-section p {
+    margin-right: 20px;
+  }
+
+  /*=======================================
+  Group program
+  =======================================*/
+  .program-group {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .program-section-btn {
+    height: 320px;
+  }
+  .program-section-btn h3 {
+    height: 60px;
+    font-size: 20px;
+  }
+  /*=======================================
+  Video section
+  =======================================*/
+  .video-section h1 {
+    font-size: 36px;
+  }
+  .video-group {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .video-group p {
+    padding-right: 10px;
+  }
+  /*=======================================
   Sign up
   =======================================*/
   .signup-section h1 {
@@ -897,9 +957,6 @@ Media queries
   .core-beliefs-section h1 {
     font-size: 38px;
   }
-  .core-links {
-    width: 100%;
-  }
 
   /*=======================================
   Sponsors group
@@ -907,15 +964,7 @@ Media queries
   #sponsors-section h1 {
     font-size: 38px;
   }
-  .sponsors-group {
-    width: 50%;
-    display: inline-block;
-    float: left;
-  }
-  .sponsors-logo {
-    margin: 0 auto;
-    width: 100%;
-  }
+
   /*=======================================
   Footer
   =======================================*/
@@ -931,5 +980,59 @@ Media queries
   }
   #footer {
     padding: 1em 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  /*=======================================
+  Program section
+  =======================================*/
+  .program-section-btn {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .program-section-btn h3 {
+    padding: 0 20px;
+    height: 140px;
+  }
+}
+
+
+@media screen and (min-width: 960px) {
+  /*=======================================
+  Sponsors group
+  =======================================*/
+  .sponsors-group {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .sponsors-group img {
+    display: inline !important;
+    margin: 0 10px !important;
+  }
+  .sponsors-logo {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /*=======================================
+  Core beliefs
+  =======================================*/
+  .core-beliefs-section a {
+    width: 33%;
+    display: inline-block;
+    float: left;
+  }
+  .core-beliefs-section img {
+    width: 207px;
+    height: 207px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 1024px;
   }
 }
