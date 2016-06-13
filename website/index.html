@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -15,18 +16,58 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
     </head>
-    <body style="display: none;">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <nav id="nav"></nav>
+        <div id="menu-shadow"></div>
         <!-- End Nav -->
 
         <!-- Start Slideshow -->
-        <div id="slideshow-container">
-          <div class="slide-01"></div>
+        <div id="slides-container">
+
+          <div id="slide01" class="slide slide01 active">
+            <div class="bcg"></div>
+            <div class="slide-content">
+              <h1>Slide 1 Title</h1>
+              <p>This is a short description</p>
+            </div>
+          </div>
+
+          <div id="slide02" class="slide slide02">
+            <div class="bcg"></div>
+            <div class="slide-content">
+              <h1>Slide 2 Title</h1>
+              <p>This is a short description</p>
+            </div>
+          </div>
+
+          <div id="slide03" class="slide slide03">
+            <div class="bcg"></div>
+            <div class="slide-content">
+              <h1>Slide 3 Title</h1>
+              <p>This is a short description</p>
+            </div>
+          </div>
+
+          <div id="slide04" class="slide slide04">
+            <div class="bcg"></div>
+            <div class="slide-content">
+              <h1>Slide 4 Title</h1>
+              <p>This is a short description</p>
+            </div>
+          </div>
+
+          <ul class="nav">
+            <li class="active"><a href="#slide01">&#9679;</i></a></li>
+            <li><a href="#slide02">&#9679;</a></li>
+            <li><a href="#slide03">&#9679;</a></li>
+            <li><a href="#slide04">&#9679;</a></li>
+          </ul>
+
         </div>
         <!-- End Slideshow -->
 
@@ -48,7 +89,7 @@
         <!-- Our tomorrow section -->
 
         <!-- Programs section -->
-        <div class="program-section">
+        <div id="programs" class="program-section">
           <div class="main-container">
             <h1>Our Programs</h1>
             <hr>
@@ -100,7 +141,7 @@
 
         <!-- Signup section -->
 
-        <div class="signup-section">
+        <div id="join" class="signup-section">
           <div class="main-container">
             <h1>Be a leader,<br>Not a sheep</h1>
             <hr>
