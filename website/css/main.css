@@ -636,6 +636,10 @@ Our section
 /*=======================================
 Signup section
 =======================================*/
+#join {
+  width: 100%;
+  text-align: center;
+}
 .signup-section {
   padding: 2em 0 4em;
   background: #eee;
@@ -866,6 +870,37 @@ Footer
 Media queries
 =======================================*/
 @media screen and (min-width: 680px) {
+  /*=======================================
+  Sign up
+  =======================================*/
+  .signup-section h1 {
+    font-size: 36px;
+  }
+  .signup-section h1 br {
+    display: none;
+  }
+  #signup-btn {
+    width: 360px;
+  }
+  /*=======================================
+  Core beliefs
+  =======================================*/
+  .core-beliefs-section a {
+    width: 33%;
+    display: inline-block;
+    float: left;
+  }
+  .core-beliefs-section img {
+    width: 150px;
+    height: 150px;
+  }
+  .core-beliefs-section h1 {
+    font-size: 38px;
+  }
+  .core-links {
+    width: 100%;
+  }
+
   /*=======================================
   Sponsors group
   =======================================*/
