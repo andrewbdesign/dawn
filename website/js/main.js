@@ -7,18 +7,20 @@
   // var body = document.querySelector("body")
   // body.style.display = "block"
 
+  function hideMenu() {
+    $("#menu-list").toggleClass("hide")
+    $("#menu-shadow").toggleClass("toggle-shadow")
+  }
+
   setTimeout(function(){
     $("#menu-hamburger").on("click", function(){
-      $("#menu-list").toggleClass("hide")
-      $("#menu-shadow").toggleClass("toggle-shadow")
+      hideMenu()
     })
     $("#menu-shadow").on("click", function(){
-      $("#menu-list").toggleClass("hide")
-      $("#menu-shadow").toggleClass("toggle-shadow")
+      hideMenu()
     })
     $("#menu-list a").on("click", function(){
-      $("#menu-list").toggleClass("hide")
-      $("#menu-shadow").toggleClass("toggle-shadow")
+      hideMenu()
     })
   },250)
 
@@ -32,7 +34,6 @@
   		$body = $('body');
 
   function init(){
-
   		// Set active slide visible
   		TweenLite.set($slideActive, {x: '0%'});
   }
@@ -45,7 +46,6 @@
 		} else {
 			e.returnValue = false;
 		}
-
     //Prevent animation when animating
     if(!$body.hasClass('is-animating')){
 
@@ -54,13 +54,9 @@
         sectionTo = $('div'+sectionToID);
 
       if(sectionFrom.attr('id') !== sectionTo.attr('id')){
-
           scrollToSection(sectionFrom, sectionTo);
-
       }
-
 		}
-
 	});
 
 	function scrollToSection(sectionFrom, sectionTo){
@@ -73,8 +69,7 @@
         tlUp = new TimelineMax();
 
 		if(sectionFrom.index() < sectionTo.index()){
-      tlDown
-            .set($body, {className:'+=is-animating'})
+      tlDown.set($body, {className:'+=is-animating'})
             .to(sectionFrom, 1.2, {x:'-=100%', ease:Power4.easeInOut, clearProps:'all'},'0')
             .to(sectionTo, 1.2, {x:'0%', ease:Power4.easeInOut},'0')
             .to(bcgFrom, 1.2, {x:'30%', ease:Power4.easeInOut, clearProps:'all'}, '0')
@@ -83,8 +78,7 @@
             .from(subheading, .7, {autoAlpha:0, y:40, ease:Power4.easeInOut},'-=0.6')
             .set($body, {className:'-=is-animating'});
 		} else {
-      tlUp
-          .set($body, {className:'+=is-animating'})
+      tlUp.set($body, {className:'+=is-animating'})
           .set(sectionTo, {x:'-100%'})
           .to(sectionFrom, 1.2, {x:'100%', ease:Power4.easeInOut, clearProps:'all'},'0')
           .to(sectionTo, 1.2, {x:'0%', ease:Power4.easeInOut},'0')
@@ -113,6 +107,7 @@
 })(jQuery)
 
 $(document).ready(function(){
+
   $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
     var target = $(this.hash);
