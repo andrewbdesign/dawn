@@ -283,7 +283,11 @@ textarea {
 /*=======================================
 Custom CSS
 =======================================*/
-
+.group {
+  content:"";
+  display: table;
+  clear: both;
+}
 * {
   box-sizing: border-box;
 }
@@ -727,7 +731,9 @@ Sponsors section
   height: 2px;
   border: 0;
 }
-
+.sponsors-logo {
+  width: 100%;
+}
 #hq-logo {
   width: 75px;
 }
@@ -860,7 +866,21 @@ Footer
 Media queries
 =======================================*/
 @media screen and (min-width: 680px) {
-
+  /*=======================================
+  Sponsors group
+  =======================================*/
+  #sponsors-section h1 {
+    font-size: 38px;
+  }
+  .sponsors-group {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .sponsors-logo {
+    margin: 0 auto;
+    width: 100%;
+  }
   /*=======================================
   Footer
   =======================================*/
