@@ -294,6 +294,7 @@ Custom CSS
 p {
   margin:0;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
 }
 h1, h3 {
   font-family: 'Montserrat', sans-serif;
@@ -337,7 +338,7 @@ nav a {
   position: fixed;
   top: 50px;
   right: -80vw;
-  transition: all .4s ease-in-out;
+  /*transition: all .4s ease-in-out;*/
   box-shadow: -5px 0 5px -5px rgba(22,22,22,0);
   z-index: 300;
 }
@@ -445,6 +446,8 @@ Slideshow container
   height: 100%;
   opacity: 0.9;
   z-index: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 #slide01 .bcg {
@@ -647,6 +650,9 @@ Signup section
   padding: 2em 0 4em;
   background: #eee;
   color: #000;
+  background: url("../img/bg-signup.png") no-repeat !important;
+  background-size: cover;
+  background-position: top center;
 }
 .signup-section h1 {
   text-align: center;
@@ -875,6 +881,36 @@ Footer
 Media queries
 =======================================*/
 @media screen and (min-width: 680px) {
+
+  /*=======================================
+  Nav
+  =======================================*/
+  #menu-hamburger {
+    display: none;
+  }
+  #logo {
+    left: 0;
+    transform: translateX(0%);
+  }
+  #menu-shadow {
+    display: none;
+  }
+  #menu-list {
+    position: fixed;
+    top: 0;
+    right: 0 !important;
+    background: #fff !important;
+    height: 50px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;
+    width: 420px;
+    transition: none;
+  }
+  #menu-list a {
+    padding: 14px 10px;
+    display: inline-block;
+    border: none;
+  }
+
   /*=======================================
   Typography
   =======================================*/
@@ -933,6 +969,7 @@ Media queries
   /*=======================================
   Sign up
   =======================================*/
+
   .signup-section h1 {
     font-size: 36px;
   }
@@ -1034,5 +1071,78 @@ Media queries
 @media screen and (min-width: 1200px) {
   .main-container {
     width: 1024px;
+  }
+}
+
+  /*=======================================
+  Intro section
+  =======================================*/
+  .intro-section {
+    padding: 2em 0 4em;
+  }
+  .intro-section h1 {
+    text-align: center;
+    color: #0ab79b;
+  }
+  .intro-section p {
+    margin-bottom: 20px;
+  }
+  .event-join-section {
+    text-align: center;
+    background: #eee;
+    padding: 5em 0;
+  }
+  .event-join-section a {
+    text-decoration: none;
+    color: #fff;
+    font-family: montserrat, sans-serif;
+    font-size: 28px;
+    padding: 20px 40px;
+    background: #0ab79b;
+    border-bottom: 4px solid #138c74;
+  }
+
+  /*=======================================
+  Workshop section
+  =======================================*/
+.main-container-workshop {
+  padding: 0 20px;
+  color: #fff;
+}
+.workshop-section {
+  padding: 3em 0;
+  background: #2c3e50;
+}
+.emphasis {
+  color: #0ab79b;
+}
+
+@media screen and (min-width: 760px) {
+  /*=======================================
+  Intro section
+  =======================================*/
+  .intro-group {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .intro-group p {
+    width: 320px;
+    margin-left: auto;
+    padding: 0 10px;
+  }
+  .intro-group-section {
+    margin: 0 auto;
+  }
+  /*=======================================
+  Workshop group
+  =======================================*/
+  .workshop-group {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .workshop-group p {
+    padding-right: 20px;
   }
 }
